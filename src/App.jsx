@@ -9,6 +9,8 @@ function App() {
     });
   });
 
+  const androidAPK = "./assets/gobike.apk";
+
   return (
     <>
       <header className="navbar">
@@ -23,7 +25,7 @@ function App() {
         <p>Manage members, track income, and control operations with GoBike.</p>
         <div className="hero-buttons">
           <a href="#download" className="btn primary">
-            Download SDK
+            Download APK
           </a>
           <a href="#features" className="btn secondary">
             Learn More
@@ -48,14 +50,17 @@ function App() {
         </div>
       </section>
       <section id="download" className="download">
-        <h3>Download GoBike SDK</h3>
+        <h3>Download GoBike APK</h3>
         <p>Integrate GoBike into your business or app today.</p>
         <div className="download-buttons">
-          <a href="#" className="btn primary border">
-            Android SDK
+          <a download href={androidAPK} className="btn primary border">
+            Android APK
           </a>
-          <a href="#" className="btn primary border">
-            iOS SDK
+          <a
+            onClick={() => alert("Sorry! Unavailable for ios")}
+            className="btn primary border"
+          >
+            iOS APK
           </a>
         </div>
       </section>
