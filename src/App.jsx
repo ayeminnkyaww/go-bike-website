@@ -9,8 +9,6 @@ function App() {
     });
   });
 
-  const androidAPK = "./assets/gobike.apk";
-
   return (
     <>
       <header className="navbar">
@@ -53,7 +51,7 @@ function App() {
         <h3>Download GoBike APK</h3>
         <p>Integrate GoBike into your business or app today.</p>
         <div className="download-buttons">
-          <a download href={androidAPK} className="btn primary border">
+          <a download href={"/gobike.apk"} className="btn primary border">
             Android APK
           </a>
           <a
