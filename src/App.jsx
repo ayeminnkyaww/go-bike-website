@@ -51,7 +51,11 @@ function App() {
         <h3>Download GoBike APK</h3>
         <p>Integrate GoBike into your business or app today.</p>
         <div className="download-buttons">
-          <a download href={"/gobike.apk"} className="btn primary border">
+          <a
+            download
+            href={"/gobike-v1-0-1.apk"}
+            className="btn primary border"
+          >
             Android APK
           </a>
           <a
